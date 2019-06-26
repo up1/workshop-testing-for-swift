@@ -41,6 +41,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ZG-Z5-vZW">
+                                <rect key="frame" x="243" y="102" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YWK-Ps-yvJ"/>
@@ -48,6 +55,7 @@
                     <navigationItem key="navigationItem" title="Settings" id="ix8-nK-UUY"/>
                     <connections>
                         <outlet property="label" destination="muc-bw-yRd" id="bLP-hr-JFZ"/>
+                        <outlet property="number" destination="2ZG-Z5-vZW" id="iJw-Im-J7W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w7t-Q2-Ssg" userLabel="First Responder" sceneMemberID="firstResponder"/>

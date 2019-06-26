@@ -13,6 +13,11 @@ class SettingsTests: XCTestCase {
         XCTAssertEqual(vc.label.text!, "Number of results to display")
     }
     
+    func test_number_placeholder_is_100() {
+        let vc = settingsViewController()
+        XCTAssertEqual(vc.number.placeholder!, "100")
+    }
+    
     func settingsViewController() -> SettingsViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "Settings") as! SettingsViewController
