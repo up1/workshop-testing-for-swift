@@ -8,7 +8,9 @@ class SettingsTests: XCTestCase {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // Act
-        let vc = storyboard.instantiateViewController(withIdentifier: "Settings") as! SettingsViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "Settings")
+        
+        let _ = vc.view
         
         // Assert
         XCTAssertEqual(vc.navigationItem.title, "Settings")
