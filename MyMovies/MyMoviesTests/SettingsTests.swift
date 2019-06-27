@@ -24,6 +24,11 @@ class SettingsTests: XCTestCase {
                        "Please enter a number between 1 and 150")
     }
     
+    func test_error_is_hidden() {
+        let vc = settingsViewController()
+        XCTAssertTrue(vc.error.isHidden)
+    }
+    
     func settingsViewController() -> SettingsViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "Settings") as! SettingsViewController
