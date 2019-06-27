@@ -18,6 +18,12 @@ class SettingsTests: XCTestCase {
         XCTAssertEqual(vc.number.placeholder!, "100")
     }
     
+    func test_error_text_is_Please_enter_a_number_between_1_and_150() {
+        let vc = settingsViewController()
+        XCTAssertEqual(vc.error.text!,
+                       "Please enter a number between 1 and 150")
+    }
+    
     func settingsViewController() -> SettingsViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "Settings") as! SettingsViewController
